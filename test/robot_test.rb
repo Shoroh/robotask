@@ -123,14 +123,14 @@ describe 'RobotCommandsTest' do
     assert_output(/2,1,EAST/) { @robot.report }
   end
 
-  it 'can #reach_report' do
-    reach_report = "
+  it 'can #rich_report' do
+    rich_report = "
       Current Position is:
         x: 0,
         y: 0,
         facing to: NORTH
     "
 
-    assert_output(Regexp.new(reach_report)) { @robot.reach_report }
+    assert_output(Regexp.new(rich_report)) { @robot.rich_report }
   end
 end

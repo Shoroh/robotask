@@ -51,7 +51,7 @@ class Robot
     puts "#{current_position[:x]},#{current_position[:y]},#{facing}"
   end
 
-  def reach_report
+  def rich_report
     puts "
       Current Position is:
         x: #{current_position[:x]},
