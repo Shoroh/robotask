@@ -67,7 +67,7 @@ describe 'Manipulator#parseTest' do
   it 'should #parse available_commands and execute the current command' do
     @manipulator.parse('place 0,0,North')
 
-    %w[move right right right move left].each do |command|
+    %w[move rIGHT right Right MOVE left].each do |command|
       @manipulator.parse(command)
     end
 

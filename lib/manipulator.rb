@@ -34,7 +34,7 @@ class Manipulator
     when /^PLACE(\d),(\d),(NORTH|EAST|WEST|SOUTH)$/i
       create_robot(Regexp.last_match)
     when reg_exp_available_methods
-      @robot.public_send(Regexp.last_match[1])
+      @robot.public_send(Regexp.last_match[1].downcase)
     else
       puts "The Command wasn't recognized! Try again!"
     end
